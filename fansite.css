@@ -1,0 +1,453 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Maven Pro', Courier, monospace;
+    }
+    
+    .header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        bottom: auto;
+        background-color: #e85c5c;
+        height: 60px;
+        padding: 0 50px;
+        font-size: 10px;
+        width: 100%;
+    }
+    
+    header div img {
+        width: 30px;
+        transition: 0.5s;
+    }
+    
+    header div img:hover {
+        box-shadow: 0px 0px 29px 2px rgb(69, 41, 41);
+    }
+    
+    header a {
+        text-decoration: none;
+        color: inherit;
+        margin: 0 8%;
+        transition: 0.5s;
+    }
+    
+    header a:hover {
+        transform: scale(1.2);
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    /* ///// LE FOOTER /////  */
+    
+    footer {
+        display: flex;
+        background-color: #e85c5c;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    footer div:nth-child(2) {
+        text-align: center;
+    }
+    
+    footer div:nth-child(2) div:first-child {
+        margin-bottom: 10px;
+    }
+    
+    footer div:nth-child(2) div:last-child i:nth-child(2) {
+        margin: 0 20px;
+    }
+    
+    footer div:last-child div a {
+        margin: 0 10px;
+    }
+    
+    footer div:nth-child(3) {
+        width: 170px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    footer ul li {
+        list-style: none;
+        margin: 10px 0;
+    }
+    /* ///// FIN FOOTER ///// */
+    
+    main {
+        height: auto;
+        width: auto;
+    }
+    
+    .page {
+        display: flex;
+        justify-content: space-around;
+        background: #7FDBFF;
+        padding: 90px 0 30px 0;
+    }
+    
+    .page3 {
+        background: url("https://cdn77.pressenza.com/wp-content/uploads/2020/01/gettyimages-1017199998-2.jpg") fixed;
+        background-size: cover;
+        padding: 50px 0 30px 0;
+    }
+    
+    .img-actualite {
+        background: url("https://korii.slate.fr/sites/default/files/styles/1440x600/public/boringtunnel_-6.jpg");
+        background-repeat: no-repeat;
+        background-position: -100px;
+        background-size: cover;
+        height: 30vh;
+        width: 20vh;
+        margin-bottom: 2%;
+    }
+    
+    .img-actualite2 {
+        background: url("https://www.frenchweb.fr/wp-content/uploads/2020/03/Satya-Nadella-Microsoft.jpg.webp");
+        background-repeat: no-repeat;
+        background-position: -150px;
+        background-size: cover;
+        height: 30vh;
+        width: 20vh;
+        margin-bottom: 2%;
+    }
+    
+    .img-actualite3 {
+        background: url("https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2018/11/startship-spacex.jpg");
+        background-repeat: no-repeat;
+        background-position: -7vh;
+        background-size: cover;
+        height: 30vh;
+        width: 20vh;
+        margin-bottom: 2%;
+    }
+    
+    .img-actualite4 {
+        background: url("https://gameomatic.fr/content/images/size/w2000/2020/10/PerAspera_KeyArt_2025x1080.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 30vh;
+        width: 20vh;
+        margin-bottom: 2%;
+    }
+    
+    .actualite {
+        display: flex;
+    }
+    
+    .actualite2 {
+        display: flex;
+    }
+    
+    .actualite3 {
+        display: flex;
+    }
+    
+    .actualite4 {
+        display: flex;
+    }
+    
+    .txt-actualite {
+        width: 50vh;
+        overflow: hidden;
+        margin-left: 5%;
+    }
+    
+    ul {
+        white-space: pre-line;
+    }
+    
+    .img-tendance {
+        background: url("https://img.phonandroid.com/2020/08/tesla-autopilot.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 30vh;
+        width: 50vh;
+    }
+    
+    .txt-tendance {
+        width: 50vh;
+        overflow: hidden;
+    }
+    
+    .img-tendance2 {
+        background: url("https://thumbor.sd-cdn.fr/NK3lpeBPvpdA-s7TWnHbI0t7Bac=/940x550/cdn.sd-cdn.fr/wp-content/uploads/2019/03/lp-logo-3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 30vh;
+        width: 50vh;
+    }
+    
+    .txt-tendance2 {
+        width: 50vh;
+        overflow: hidden;
+    }
+    
+    .taille-a {
+        display: flex;
+    }
+    
+    .bloc {
+        /* display: inline; */
+        opacity: inherit;
+        color: white;
+        border-bottom: solid white 2px;
+    }
+    
+    .realisation {
+        display: flex;
+        margin-top: 2%;
+    }
+    
+    .img-realisation {
+        background: url("https://www.frenchweb.fr/wp-content/uploads/2020/09/OpenAI.jpg.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        width: 60vh;
+        margin-left: 5%;
+    }
+    
+    .txt-realisation {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        margin-left: 2%;
+        font-size: 4vh;
+    }
+    
+    .bloc-sous-img {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+    
+    .sous-img-realisation {
+        background: url("https://itsocial.fr/wp-content/uploads/2019/03/OpenAI.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20vh;
+        width: 40vh;
+    }
+    
+    .sous-img-realisation2 {
+        background: url("https://miro.medium.com/max/933/1*7tcuAJrWpFXVAeC8pOfaVg.jpeg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20vh;
+        width: 40vh;
+    }
+    
+    .sous-img-realisation3 {
+        background: url("https://www.robots-et-compagnie.com/wp-content/uploads/2016/11/openAI-7.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20vh;
+        width: 40vh;
+    }
+    
+    .bloc2 {
+        display: inline;
+        opacity: 0.9;
+        color: white;
+    }
+    
+    .taille-b {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .realisation2 {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2%;
+    }
+    
+    .img-realisation2 {
+        background: url("https://www.automobile-propre.com/wp-content/uploads/2020/05/Tesla-Model-S-mai-2020-configurateur-1200x800.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        width: 60vh;
+        margin-right: 5%;
+    }
+    
+    .txt-realisation2 {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        margin-left: 2%;
+        font-size: 4vh;
+    }
+    
+    .bloc-sous-img2 {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+    
+    .sous-img2-realisation {
+        background: url("https://cdn-static.boursier.com/illustrations/photos/l_tesla-elon-musk.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20vh;
+        width: 40vh;
+    }
+    
+    .sous-img2-realisation2 {
+        background: url("https://images.frandroid.com/wp-content/uploads/2017/02/elon-musk-tesla.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20vh;
+        width: 40vh;
+    }
+    
+    .sous-img2-realisation3 {
+        background: url("https://image.cnbcfm.com/api/v1/image/104243259-GettyImages-609781368.jpg?v=1532563927");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20vh;
+        width: 40vh;
+    }
+
+/* MORAD et SAMY */
+
+
+/*  nouvelle branche  */
+
+
+
+/* ///// MAIN ///// */
+
+.image-accueil {
+    width: 100%;
+    margin: 2% 0 0 0;
+    padding-right: 20%;
+    background: url("images/accueil/photo.png") no-repeat right fixed;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-accueil div {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+.image-accueil div h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.realisations img {
+    height: 80px;
+    border: #e85c5c solid 2px;
+    transition: 0.8s;
+    padding: 10px 100px;
+    margin: 10px;
+}
+
+.realisations img:hover {
+    background-color: #e85c5c;
+    padding: 1px 91px;
+}
+
+.realisations {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 10px;
+    flex-wrap: wrap;
+}
+
+.realisations p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+
+/* ///// CONTACT ///// */
+
+.contact {
+    margin: 150px;
+}
+
+.contact div:first-child {
+    display: flex;
+    justify-content: center;
+}
+
+.contact div:first-child input:first-child {
+    margin-right: 20px;
+}
+
+.contact div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact :last-child input {
+    width: 620px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #e85c5c;
+    width: 300px;
+    height: 40px;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 0 5px;
+}
+
+input::placeholder {
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-family: 'Maven Pro', Courier, monospace;
+}
+
+textarea {
+    border: inherit;
+    border-bottom: 1px solid #e85c5c;
+    border-left: 1px solid #e85c5c;
+    border-right: 1px solid #e85c5c;
+    outline: none;
+    width: 620px;
+    resize: none;
+    font-family: 'Maven Pro', Courier, monospace;
+    padding: 10px 20px;
+}
+
+textarea::placeholder {
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+
